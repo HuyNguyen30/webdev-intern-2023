@@ -134,10 +134,6 @@ function App() {
     )
   }
 
-  console.log({ checks, amounts, total, cart })
-  console.log(localStorage)
-
-
   return (
     <div className="App_mainContent">
       <div className="App_card">
