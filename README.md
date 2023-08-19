@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# G-Sneaker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the instruction for web developer intern assignment at [Golden Owl](https://goldenowl.asia). You will build a simple shopping cart.
 
-## Available Scripts
+![Screenshot](./screenshots/screenshot.jpg)
 
-In the project directory, you can run:
+[Live Demo](https://gshoes.vercel.app)
 
-### `npm start`
+# Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Your application should have at least features in [Must have](#must-have), things in [Nice to have](#nice-to-have) is optional (but yeah, it's attractive if you have).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Must have:
 
-### `npm test`
+- Display all products in `Our Products` section (for products data please check from [Technical Requirements](#technical-requirements)):
+  - Single product should have name, description, price, image and `Add To Cart` button.
+  - User able to click on `Add To Cart` to add target product to their cart.
+  - Added product doesn't have `Add To Cart` button anymore, it should have `Check Mark Icon (✓)` instead.
+- Display all added products in `Your Cart` section:
+  - Each product in cart should have name, price, image, increase/decrease amount button and remove button.
+  - User able to increase/decrease amount of a product in cart. When product's amount is decreased to zero, that product will be removed from cart naturally.
+  - User able to remove product from cart.
+  - Show total price of all products in car. When user increase/decrease product's amount or remove product, total price should be re-calculate correctly.
+  - When there are no products in cart, we should show `Your cart is empty` message.
+  - Products in cart should be persistent: When user visit the application, products are added before should be showed, user don't need to add products again.
+- UI must follow correctly design from [live demo](https://gshoes.vercel.app).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Nice to have:
 
-### `npm run build`
+- Responsive design (look good on all devices: desktops, tablets & mobile phones).
+- Smooth animations (don't really need to be same as the demo, just do what you think is good).
+- Deploy the application to free platforms.
+- Unit tests
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Technical Requirements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- You can use any front-end library/framework like React, Angular, Vue, ... or just simple things with HTML + CSS + Javascript (JQuery).
+- You can use any language that you comfortable with for back-end (Ruby, Java, PHP, ...) It a plus if you can use Ruby.
+- You can use MySQL, PostgresSQL, MongoDB or any databases.
+- Draw one flowchart diagram and one DB diagram for your project.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Products data:
+  - [`./app/data/shoes.json`](./app/data/shoes.json)
+- Images & icons:
+  - [`./app/assets`](./app/assets)
+  - Product images are fetched directly from remote url in data
+- Fonts:
+  - [https://fonts.google.com/specimen/Rubik?query=Rubik](https://fonts.google.com/specimen/Rubik?query=Rubik)
+- Colors:
+  - `White: #FFFFFF`
+  - `Black: #303841`
+  - `Gray: #777777`
+  - `Yellow: #F6C90E`
 
-### `npm run eject`
+# Submission
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+After completing the assignment, please push the source code to remote repository (github/gitlab), then send us the link to your repository.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Don't forget to add `README.md` which includes guide to run your project locally and heroku demo link.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**GOOD LUCK!!!**
 
-## Learn More
+![Your Code Work](./screenshots/meme.jpeg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Contributors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Ben (from GO): [tranquangvu](https://github.com/tranquangvu)
